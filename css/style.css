@@ -80,6 +80,7 @@ body {
   /* 	background-color: darkkhaki; */
 }
 .conteiner {
+  overflow: hidden;
   margin: 0;
   /* 	width: 100%; */
   outline: 1px solid red;
