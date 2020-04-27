@@ -188,11 +188,13 @@ body {
 }
 .header-logo-svg {
 	fill: #fff;
+	transform: scale(0.6);
+	
 }
 
 .header-logo-txt {
 	.raleway-font();
-	font-size: 3.4em;
+	font-size: 2.7em;
 	line-height: 1.2;
 	font-weight: 400;
 	letter-spacing: -0.04em;
@@ -313,7 +315,7 @@ body {
     flex-direction: column;
     width: 34px;
     /* flex-grow: 1; */
-    margin: auto 0 auto 47%;
+    margin: auto 0 auto 62%;
 }
 
 .menu-toggle input {
@@ -565,7 +567,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-
+margin: 0 0 2% 0;
 }
 
 
@@ -678,14 +680,15 @@ body {
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	width: 1230px;
+	min-width: 570px;
+	max-width: 1230px;
 	max-height: 482px;
 	position: relative;
 }
 
 .photo-landscape:first-child {
 	position: absolute;
-	left: 0px;
+	left: -15%;
 	z-index: 1;
 	&:hover {
 		z-index: 4;
@@ -699,7 +702,7 @@ body {
 
 .photo-landscape:last-child {
 	position: absolute;
-	right: 0px;
+	right: -15%;
 	z-index: 1;
 	&:hover {
 		z-index: 4;
@@ -724,7 +727,7 @@ body {
 .rate-span {
 .raleway-font();
 	    display: flex;
-    margin: 0 0 8px 0;
+    margin: 3% 0 1% 0;
     font-size: 1.2em;
     line-height: 1.2;
     font-weight: 400;
@@ -773,7 +776,7 @@ min-width: 95px;
 	}
 }
 .projects {
-	padding: 32px 375px 25px 375px;
+	padding: 0 5% 2% 5%;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -800,7 +803,6 @@ min-width: 95px;
 	display: block;
 	min-width: 757px;
 	max-width: 757px;
-	margin: 0 0 40px 0;
 	.montserrat-font();
 	font-size: 1.6em;
 	line-height: 28px;
@@ -897,7 +899,7 @@ min-width: 95px;
 
 .card-body {
 	text-align: left;
-	padding: 30px 0 30px 30px;
+	padding: 3%;
 	position: relative;
 	display: block;
 	box-sizing: border-box;
@@ -986,9 +988,8 @@ min-width: 95px;
 }
 
 .slider-button {
-	width: 170px;
-	min-width: 170px;
-	height: 53px;
+	min-width: 127px;
+    height: 37px;
 	background-color: #998675;
 	border-radius: 3px;
 	border: none;
@@ -1040,7 +1041,7 @@ min-width: 95px;
 	background: none;
 	border: none;
 	outline: none;
-    margin: 0 0 10px 0;
+    margin: 0;
     transform: scale(0.6);
 		z-index: 2;
 	&:hover {
@@ -1078,7 +1079,7 @@ min-width: 95px;
 	display: block;
 	.raleway-font();
 	.box-sizing();
-	font-size: 2em;
+	font-size: 1.6em;
 	line-height: 1.2;
 	font-weight: 500;
 	color: #ffffff;
@@ -1091,13 +1092,13 @@ min-width: 95px;
 .video-p {
 	.hyphens ();
 	.montserrat-font();
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 17px;
 	font-weight: 300;
 	color: #ffffff;
 	max-width: 100%;
 	text-align: center;
-    margin: 2% 15% 1% 15%;
+    margin: 1% 2%;
 	z-index: 2;
 }
 
@@ -1124,6 +1125,7 @@ min-width: 95px;
 }
 .mobile {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: flex-start;
 	background-color: #fbfaf8;
 }
@@ -1131,6 +1133,7 @@ min-width: 95px;
 .mobile-img {
 	/* 	.service-class (); */
 	display: flex;
+/* 	min-width: 570px; */
 	margin: 0;
 	.box-sizing();
 }
@@ -1141,6 +1144,7 @@ min-width: 95px;
 	.montserrat-font();
 	max-width: 659px;
 	min-height: 317px;
+	min-width: 570px;
 }
 
 .mobile-span {
@@ -1152,30 +1156,37 @@ min-width: 95px;
     font-weight: 600;
     color: #555555;
     text-align: center;
-    margin: 4% 2% 2% 2%;
+    margin: 0% 2% 2% 2%;
+	min-width: 560px;
 }
 
 .mobile-p {
     max-width: 100%;
-    font-size: 1.4em;
+    font-size: 1.2em;
     line-height: 24px;
     font-weight: 300;
     color: #8c8c8c;
-    margin: 2% 1% 3% 5%;
+    margin: 0;
+	min-width: 560px;
 }
 
 .mobile-details {
 	/* 	.service-class (); */
-	margin: 0 0 12px 121px;
+	margin: 0 0 2% 24%;
+	min-width: 50px;
+	width: 100%;
+	padding: 0 2% 3% 0;
 }
 
 .mobile-summary {
 	/* 	.service-class (); */
 	.box-sizing();
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 300;
 	color: #8c8c8c;
 	position: relative;
+	max-width: 280px;
+	min-width: 50px;
 }
 
 .mobile-summary::-webkit-details-marker {
@@ -1216,7 +1227,8 @@ min-width: 95px;
 	align-items: center;
 	.box-sizing();
 	position: relative;
-	   margin: 3% 0 3% 0;
+	  margin: 0% 0 5% 0;
+	padding: 2% 0 0 0;
 	&:hover {
 		opacity: 0.5;
 		transform: scale(1.1);
@@ -1244,6 +1256,7 @@ min-width: 95px;
 	.box-sizing();
 	display: flex;
 	fill: #c7b299;
+	transform: scale(0.7);
 }
 
 .figures-span {
@@ -1290,7 +1303,7 @@ min-width: 95px;
 		justify-content: flex-start;
 	}
 	.header-panel {
-		min-width: 181px;
+		min-width: 157px;
 		height: 100%;
 		width: 33%;
 	}
@@ -1317,22 +1330,47 @@ min-width: 95px;
 	.projects{
 		padding: 0;
 		flex-wrap: wrap;
+		margin: 2% 0 0 0;
 	}
 	.projects-span{
 		margin: 0;
 	}
 	.projects-span-p{
     min-width: 320px;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	padding: 0 3px;
+	margin: 0;
 	}
 	.projects-button-group{
 	 flex-wrap: wrap;
+		margin: 0 0 2% 0;
 	}
 	.projects-button{
 	margin: 3px 3.5px 3px 3.5px;	
 	}
+	.mobile-div{
+		min-width: 320px;
+	}
 	.mobile-img{display: none;}
+}
+.mobile-span{
+	width: 100%;
+	min-width: 320px;
+	margin: 0;
+}
+.mobile-p{
+		min-width: 320px;
+	width: 100%;
+	padding: 0 2%;
+}
+.mobile-details{
+	min-width: 50px;
+	max-width: 260px;
+	margin: 0 0 1% 15%;
+	padding: 0 0 1% 0;
+}
+.mobile-summary{
+	max-width: 100%;
 }
 
 // Большие девайсы (большие десктопы, >= 575px)
@@ -1356,6 +1394,9 @@ min-width: 95px;
 	}
 	.header-logo {
 		width: 181px;
+	}
+	.header-logo-svg{
+			transform: scale(1);
 	}
 	.navigation-a {
 		display: flex;
@@ -1381,8 +1422,14 @@ min-width: 95px;
 	.instruments-section {
 		padding: 0 20%;
 		margin-top: 2%;
-		flex-wrap: nowrap;
-		min-width: 970px;
+		flex-wrap: wrap;
+		min-width: 320px;
+		margin: 0;
+	}
+	.instruments{
+		min-width: 147px;
+    	max-width: 25%;
+		margin: 3% 0 0 0;
 	}
 	.instruments:after{
 	left: 50%;
@@ -1400,14 +1447,15 @@ min-width: 95px;
 	}
 	
 	.rate-aside {
-		min-width: 750px;
+		min-width: 570px;
 		justify-content: space-between;
-		padding: 0 374px 0 376px;
+		padding: 0 20%;
 		min-height: 150px;
 		flex-wrap: nowrap;
 	}
 	.rate-span {
 		font-size: 2.8em;
+		margin: 0% 0 1% 0;
 	}
 	.rate-p {
 		font-size: 1.8em;
@@ -1420,8 +1468,15 @@ min-width: 95px;
 	.projects-span{
 		font-size: 3em;
 	}
+	.projects-span-p{
+		margin: 0 0 3% 0;
+	}
 	.card-img
 	{min-width: 370px;}
+	.slider-button{
+	min-width: 170px;
+	height: 53px;
+	}
 	.video {
 		max-width: 100%;
 		max-width: 1920px;
@@ -1481,6 +1536,9 @@ justify-content: flex-start;
 	}
 	.mobile-details{
 		    margin: 0 0 2% 12%;
+		padding: 0;
+		max-width: 100%;
+		
 	}
 	.mobile-summary{
 			font-size: 1.6em;
@@ -1497,6 +1555,8 @@ justify-content: flex-start;
 	min-height: 171px;
 	justify-content: flex-start;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .figures-div:after {
@@ -1504,6 +1564,7 @@ justify-content: flex-start;
 }
 
 .figures-svg {
+	transform: scale(1);
 	margin: 0 0 30px 0;
 }
 
