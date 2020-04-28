@@ -74,7 +74,7 @@ body {
   max-width: 1920px;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* 	.service-class (); */
   font-size: 62.5%;
   /* 	background-color: darkkhaki; */
 }
@@ -1200,6 +1200,7 @@ body {
   /* 	.service-class (); */
   font-family: 'montserrat';
   font-style: normal;
+  margin: 2% 0;
   max-width: 370px;
   max-height: 395px;
   position: relative;
