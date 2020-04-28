@@ -676,7 +676,7 @@ body {
   background-color: #998675;
 }
 .projects {
-  padding: 0 19% 2% 19%;
+  padding: 0 11% 2% 11%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -1012,6 +1012,7 @@ body {
 .mobile-img {
   /* 	.service-class (); */
   display: flex;
+  /* 	min-width: 570px; */
   margin: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1190,7 +1191,7 @@ body {
 .posts-div {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   min-width: 310px;
   width: 100%;
@@ -1351,6 +1352,31 @@ body {
   color: #ffffff;
   border-radius: 0px 0px 3px 3px;
 }
+.labels-section {
+  background-image: url(../img/labels.png);
+  max-height: 489px;
+  padding: 2% 0%;
+  min-width: 150px;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.labels {
+  display: flex;
+  margin: 0 3%;
+  /*  	width: 25%;  */
+}
+.labels-svg {
+  transition: transform 0.5s ease-out;
+}
+.labels-svg:hover {
+  transform: rotate(360deg);
+}
 @media (max-width: 575.98px) {
   .header-item {
     width: 100%;
@@ -1414,25 +1440,25 @@ body {
   .mobile-img {
     display: none;
   }
-}
-.mobile-span {
-  width: 100%;
-  min-width: 320px;
-  margin: 0;
-}
-.mobile-p {
-  min-width: 320px;
-  width: 100%;
-  padding: 0 2%;
-}
-.mobile-details {
-  min-width: 50px;
-  max-width: 260px;
-  margin: 0 0 1% 15%;
-  padding: 0 0 1% 0;
-}
-.mobile-summary {
-  max-width: 100%;
+  .mobile-span {
+    width: 100%;
+    min-width: 320px;
+    margin: 0;
+  }
+  .mobile-p {
+    min-width: 320px;
+    width: 100%;
+    padding: 0 2%;
+  }
+  .mobile-details {
+    min-width: 50px;
+    max-width: 260px;
+    margin: 0 0 1% 15%;
+    padding: 0 0 1% 0;
+  }
+  .mobile-summary {
+    max-width: 100%;
+  }
 }
 @media (min-width: 576px) {
   .header-item {
@@ -1631,7 +1657,7 @@ body {
     font-size: 1.3em;
   }
   .posts-section {
-    padding: 1% 14% 0 14%;
+    padding: 1% 14% 1% 14%;
   }
   .posts-span {
     font-size: 3em;
@@ -1643,13 +1669,12 @@ body {
   }
   .posts-div {
     padding: 2% 0;
-    justify-content: center;
+    /*     justify-content: center; */
   }
   .posts-article {
     font-family: 'montserrat';
     width: 31%;
     min-width: 349px;
-    /* max-height: 395px; */
     margin: 0 1%;
     padding: 0 0 1% 0;
   }
@@ -1661,5 +1686,19 @@ body {
   }
   .posts-p-article {
     margin: 2% 1% 4% 2%;
+  }
+  .labels-section {
+    padding: 5% 20%;
+  }
+  .labels {
+    height: 140px;
+    display: flex;
+    align-items: center;
+  }
+  .labels-svg {
+    transform: scale(2.2);
+  }
+  .labels-svg:hover {
+    transform: scale(1.5);
   }
 }
